@@ -1,5 +1,13 @@
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
+/*****************************************************************
+ *  Package for server view
+ *  @author Ferrero
+ *  @date 21.08.2025
+ ****************************************************************/
+package com.example.planote.view.plan
+
+/*****************************************************************
+ * Imported packages
+ ****************************************************************/
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -21,6 +29,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+/*****************************************************************
+ * Top Level Functions
+ ****************************************************************/
 @Composable
 fun CustomBlock(
     title: String,
@@ -40,7 +51,6 @@ fun CustomBlock(
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
-            // Заголовок блока с кнопкой настроек
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
@@ -65,10 +75,7 @@ fun CustomBlock(
                     )
                 }
             }
-
             Spacer(modifier = Modifier.height(16.dp))
-
-            // Контент блока
             content()
         }
     }

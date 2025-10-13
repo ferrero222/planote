@@ -1,5 +1,5 @@
 /*****************************************************************
- *  Package for MVVM plan data module
+ *  DAO package for room
  *  @author Ferrero
  *  @date 21.08.2025
  ****************************************************************/
@@ -27,7 +27,7 @@ import java.time.LocalDate
  * Interfaces
  ****************************************************************/
 /*****************************************************************
- * DAO base interface
+ * DAO bases interface
  ****************************************************************/
 interface PlanCalendarEntityBaseDao<Entity> {
     @Insert(onConflict = OnConflictStrategy.REPLACE) suspend fun insertEntity(entity: Entity): Long
@@ -45,7 +45,7 @@ interface PlanCalendarTaskBaseDao<Task> {
  * Classes
  ****************************************************************/
 /*****************************************************************
- * DAO class for DB.
+ * DAO classes for DB.
  ****************************************************************/
 @Dao
 abstract class PlanCalendarDaysDao : PlanCalendarEntityBaseDao<PlanCalendarDay>,

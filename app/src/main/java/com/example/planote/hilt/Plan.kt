@@ -1,5 +1,13 @@
+/*****************************************************************
+ *  Package for HILT implementation
+ *  @author Ferrero
+ *  @date 21.08.2025
+ ****************************************************************/
 package com.example.planote.hilt
 
+/*****************************************************************
+ * Imported packages
+ ****************************************************************/
 import android.content.Context
 import androidx.room.Room
 import com.example.planote.model.plan.repository.source.local.room.PlanDataBase
@@ -17,6 +25,12 @@ import com.example.planote.model.plan.repository.PlanCalendarYearsRepository
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.example.planote.model.plan.repository.source.local.room.Converters
 
+/*****************************************************************
+ * Objects
+ ****************************************************************/
+/*****************************************************************
+ * Hilt object for Plan Module
+ ****************************************************************/
 @Module
 @InstallIn(SingletonComponent::class)
 object PlanModuleDI {
@@ -33,6 +47,9 @@ object PlanModuleDI {
     }
 }
 
+/*****************************************************************
+ * Hilt object for Data Base plan
+ ****************************************************************/
 @Module
 @InstallIn(SingletonComponent::class)
 object DatabaseModule {

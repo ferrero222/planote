@@ -1,5 +1,5 @@
 /*****************************************************************
- *  Package for MVVM plan data repository
+ *  Repository source package
  *  @author Ferrero
  *  @date 21.08.2025
  ****************************************************************/
@@ -24,7 +24,7 @@ import kotlinx.coroutines.flow.Flow
  * Classes
  ****************************************************************/
 /*****************************************************************
- * Entity settings class for saving plan settings in DB
+ * DB repository's
  ****************************************************************/
 class PlanCalendarDaysRepository(private val daysDao: PlanCalendarDaysDao) {
     suspend fun insertDay(day: PlanCalendarDay): Long = daysDao.insertEntity(day)

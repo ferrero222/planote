@@ -1,5 +1,5 @@
 /*****************************************************************
- *  Package for MVVM plan data module
+ *  Entity package for room
  *  @author Ferrero
  *  @date 21.08.2025
  ****************************************************************/
@@ -19,7 +19,7 @@ import java.time.LocalDate
  * Classes
  ****************************************************************/
 /*****************************************************************
- * Entity class for weekly plan module data in DB
+ * Entity class for plan calendar day module data in DB
  ****************************************************************/
 @Entity(tableName = "planCalendarDay")
 data class PlanCalendarDay(
@@ -60,7 +60,7 @@ data class PlanCalendarDayTask(
 }
 
 /*****************************************************************
- * Entity class for weekly plan module data in DB
+ * Entity class for plan calendar month module data in DB
  ****************************************************************/
 @Entity(tableName = "planCalendarMonth")
 data class PlanCalendarMonth(
@@ -101,7 +101,7 @@ data class PlanCalendarMonthTask(
 }
 
 /*****************************************************************
- * Entity class for weekly plan module data in DB
+ * Entity class for plan calendar year module data in DB
  ****************************************************************/
 @Entity(tableName = "planCalendarYear")
 data class PlanCalendarYear(

@@ -1,5 +1,5 @@
 /*****************************************************************
- *  Package for MVVM plan data repository
+ *  Repository source package
  *  @author Ferrero
  *  @date 21.08.2025
  ****************************************************************/
@@ -18,7 +18,7 @@ import com.example.planote.model.plan.repository.source.local.room.entity.PlanWe
  * Classes
  ****************************************************************/
 /*****************************************************************
- * Entity settings class for saving plan settings in DB
+ * Week repository for DB
  ****************************************************************/
 class PlanWeekRepository(private val weekDao: PlanWeekDao) {
     suspend fun insertWeek(week: PlanWeek): Long = weekDao.insertWeek(week)
